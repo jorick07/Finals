@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <style>
+        #header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    </style>
+    <script src="https://kit.fontawesome.com/a088020bbf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="menu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PROJECT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi I'm <span>Jorick Buenafe</span><br>from <span>CCC</span></h1>
+        </div>
+    </div>
+   </div>
+   <!----------about------>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/DSC_1068.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub">About Me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia doloremque eos incidunt id quaerat illum ut nemo corporis itaque nisi distinctio accusamus natus maxime nam at sunt, ipsum, eius ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam a ea excepturi. Sunt, fuga dignissimos beatae, iure voluptates velit aliquam quo reprehenderit aperiam doloremque esse quas nulla libero possimus neque. <br></p>
+                <div class="titles">
+                    <p class="tlinks active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tlinks"onclick="opentab('experience')">Experience</p>
+                    <p class="tlinks"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tcontents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Developer</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Andriod Application</li>
+                    </ul>
+                </div>
+                <div class="tcontents" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>Web Development</li>
+                        <li><span>UI/UX</span><br>Web Development</li>
+                        <li><span>UI/UX</span><br>Web Development</li>
+                    </ul>
+                </div>
+                <div class="tcontents" id="education">
+                    <ul>
+                        <li><span>UI/UX</span><br>Web Development</li>
+                        <li><span>UI/UX</span><br>Web Development</li>
+                        <li><span>UI/UX</span><br>Web Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Back To Top</a>
+    </div>
+   </div>
+   <!-------Portfolio--------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub">Personal Project</h1>
+        <div class="project">
+            <div class="work">
+                <img src="images/sample project.PNG" >
+                <div class="layer">
+                    <H3>Midterm Project</H3>
+                </div>
+            </div>
+            <div class="project">
+                <div class="work">
+                    <img src="images/sample2.png" >
+                    <div class="layer">
+                    <H3>Humanities Project</H3>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+   <!-------Contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub">Contact Me</h2>
+                <p><i class="fa-solid fa-paper-plane"></i> jorickbuenafe@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 09123456789</p>
+                <div class="s-icon">
+                    <a href="https://www.facebook.com/jorick.buenafe.96/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/jrck.b/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="script/script.js"></script>
+<script src="script/sidemenu.js"></script>
+</body>
+</html>
